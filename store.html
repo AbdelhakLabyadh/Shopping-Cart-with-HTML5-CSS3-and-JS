@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart </title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="store.js" async></script>
+    </head>
+    <body id="online_shop">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="open_sidebar">&#9776; open</span>
+
+        <div id="mySidenav" class="sidenav">
+            <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a> </div>
+            <div class="social">
+                <label for="social"> Social Media</label>
+                <ul class="social_contact">
+                    <li>
+                        <a href="www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.youtube.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div> 
+          
+          
+        <section class="container content-section">
+           
+            <p>Feel Free to shop with US. <br />
+                We are not only <span> BUT </span>
+                we are <span> UNIQUE.</span>
+            </p>
+            <img src="Images/onlineshop.jpg" 
+            alt="Online Shopping" 
+            id="onlineshop">
+        
+            <h2 class="section-header">PRODUCTS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Camera KANON</span>
+                    <img class="shop-item-image" src="https://www.dailycameranews.com/wp-content/uploads/2014/03/Canon_EOS_3d_rumors.jpg" title="Camera Kanon">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$789.90</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">External Hard Drive</span>
+                    <img class="shop-item-image" src="https://images-na.ssl-images-amazon.com/images/I/51MRhB1pL2L._SL1428_.jpg" title="External Hard Drive">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$99.90</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Smart Watch</span>
+                    <img class="shop-item-image" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/storm-grey-main.png?v=1620719041" title="Smart Watch">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$236.90</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">PC Gamer</span>
+                    <img class="shop-item-image" src="https://www.graiet.tn/wp-content/uploads/2020/10/MSI-PC-Gamer-Core-i7-10750H10e-Gen-GL75LEO10SER-281XFR-scaled.gif" title="PC Gamer">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$599.90</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">IPhone 11 Pro max</span>
+                    <img class="shop-item-image" src="https://www.tunisianet.com.tn/155924-large/iphone-11-pro-max-prix-tunisie.jpg" title="IPhone 11 Pro Max">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$999.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Smart TV</span>
+                    <img class="shop-item-image" src="data:image/jpeg;base64,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" title="Smart TV">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$369.90</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button" id="purchase"> PURCHASE</button>
+        </section>
+        
+    </body>
+</html>
